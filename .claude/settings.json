@@ -8,11 +8,7 @@
       "Bash(git commit:*)",
       "Bash(git checkout:*)"
     ],
-    "deny": [
-      "Read(./.env)",
-      "Read(./.env.local)",
-      "Bash(git push --force:*)"
-    ]
+    "deny": ["Read(./.env)", "Read(./.env.local)", "Bash(git push --force:*)"]
   },
   "hooks": {
     "Stop": [

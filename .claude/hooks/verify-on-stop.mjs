@@ -16,7 +16,8 @@ try {
 } catch (err) {
   const output = `${err.stdout ?? ''}\n${err.stderr ?? ''}`;
   process.stderr.write(
-    'pnpm verify:fast falhou. Corrija os erros abaixo antes de encerrar:\n' + output.slice(-4000),
+    'pnpm verify:fast falhou. Corrija os erros abaixo antes de encerrar:\n' +
+      output.slice(-4000),
   );
   process.exit(2);
 }
